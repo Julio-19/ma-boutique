@@ -12,7 +12,6 @@ const DEFAULT_PRODUCTS = [
     stars: 4.5,
     description: "Crème 100 % naturelle à base de karité et aloe vera. Hydrate, nourrit et unifie le teint en douceur. Sans parabène, sans mercure. Résultats visibles en 2 semaines.",
     images: [
-      "images/blog-3.jpg,
       "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&q=80",
       "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=600&q=80"
     ],
