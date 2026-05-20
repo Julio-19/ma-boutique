@@ -7,8 +7,8 @@ const DEFAULT_PRODUCTS = [
   {
     id: 1,
     name: "Crème Éclaircissante Naturelle",
-    price: 8500,
-    oldPrice: 12000,
+    price: 1200,
+    oldPrice: 19000,
     stars: 4.5,
     description: "Crème 100 % naturelle à base de karité et aloe vera. Hydrate, nourrit et unifie le teint en douceur. Sans parabène, sans mercure. Résultats visibles en 2 semaines.",
     images: [
