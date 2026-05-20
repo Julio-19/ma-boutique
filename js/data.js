@@ -14,7 +14,7 @@ const DEFAULT_PRODUCTS = [
     images: [
   "images/1.png.jpg",
   "images/2~2.png",
-  "images/5~2.png.jpg",
+  "images/5~2.png",
   "images/blog-3.jpg"
 ],
     badge: "Bestseller",
