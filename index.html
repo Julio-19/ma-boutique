@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ma Boutique</title>
+  <title>La Reance</title>
   <meta name="description" content="Produits naturels de beauté — paiement à la livraison" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
 
 <!-- ===== HEADER ===== -->
 <header class="site-header">
-  <a href="index.html" class="logo">✨ Ma Boutique</a>
+  <a href="index.html" class="logo">✨ La Reance</a>
   <div class="tagline">Beauté naturelle · Livraison à domicile</div>
 </header>
 
@@ -74,7 +74,7 @@
 </section>
 
 <footer class="site-footer">
-  © <span id="year"></span> Ma Boutique · Paiement à la livraison · WhatsApp disponible
+  © <span id="year"></span> La Reance · Paiement à la livraison · WhatsApp disponible
 </footer>
 
 <!-- ===== MODAL COMMANDE ===== -->
@@ -117,7 +117,7 @@
       </div>
 
       <div class="form-note">
-        ✅ Votre commande sera confirmée par WhatsApp. Paiement uniquement à la livraison.
+        ✅ Votre commande sera enregistrée automatiquement. Paiement uniquement à la livraison.
       </div>
 
       <button class="btn-enregistrer" id="btn-save" onclick="saveOrder()">
@@ -134,7 +134,16 @@
         Vous serez contacté(e) sur le <strong id="confirm-tel"></strong> pour la livraison.<br>
         <em>💳 Le paiement se fait uniquement à la livraison.</em>
       </div>
-      <button class="btn-ok" onclick="closeOrderModal()">Fermer</button>
+      <!-- Bouton WhatsApp optionnel -->
+      <div style="margin:16px 0 8px">
+        <p style="font-size:.82rem;color:#7A6A4F;margin-bottom:10px">Vous pouvez aussi envoyer votre commande via WhatsApp :</p>
+        <button class="btn-ok" id="btn-whatsapp" onclick="sendWhatsApp()" style="background:#25D366;color:#fff;display:flex;align-items:center;gap:8px;margin:0 auto">
+          📱 Confirmer sur WhatsApp
+        </button>
+      </div>
+      <button onclick="closeOrderModal()" style="margin-top:10px;background:none;border:none;color:var(--muted);font-size:.85rem;cursor:pointer;text-decoration:underline">
+        Non merci, fermer
+      </button>
     </div>
   </div>
 </div>
@@ -166,7 +175,7 @@ function formatPrice(p) {
 // ========== CHARGER PRODUIT ==========
 function loadProduct(p) {
   currentProduct = p;
-  document.title = p.name + ' — Ma Boutique';
+  document.title = p.name + ' — La Reance';
 
   // Badge
   const badge = document.getElementById('prod-badge');
@@ -279,6 +288,9 @@ document.getElementById('order-modal').addEventListener('click', function(e) {
 });
 
 // ========== ENREGISTRER COMMANDE ==========
+const WEB3FORMS_KEY = "ecc1c49c-684c-47b9-9339-2b8975158170";
+let lastOrderMsg = '';
+
 function saveOrder() {
   const nom = document.getElementById('f-nom').value.trim();
   const qty = document.getElementById('f-qty').value;
@@ -296,9 +308,10 @@ function saveOrder() {
   btn.disabled = true;
   btn.innerHTML = '<span class="spinner"></span> Envoi en cours…';
 
-  // Construire le message WhatsApp
   const total = formatPrice(currentProduct.price * parseInt(qty));
-  const msg = [
+
+  // Message pour WhatsApp (gardé en mémoire)
+  lastOrderMsg = [
     '🛒 *NOUVELLE COMMANDE*',
     '━━━━━━━━━━━━━━━━━━━',
     '📦 Produit : ' + currentProduct.name,
@@ -315,20 +328,54 @@ function saveOrder() {
     '📅 Date : ' + new Date().toLocaleString('fr-FR')
   ].filter(Boolean).join('\n');
 
-  const encoded = encodeURIComponent(msg);
-  const waUrl = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encoded;
+  // Envoi par email via Web3Forms
+  const formData = {
+    access_key: WEB3FORMS_KEY,
+    subject: '🛒 Nouvelle commande — ' + currentProduct.name,
+    from_name: 'La Reance Boutique',
+    name: nom,
+    message:
+      'PRODUIT : ' + currentProduct.name + '\n' +
+      'QUANTITÉ : ' + qty + '\n' +
+      'TOTAL : ' + total + '\n\n' +
+      'CLIENT : ' + nom + '\n' +
+      'TÉLÉPHONE : ' + tel + '\n' +
+      'LIEU : ' + lieu + '\n' +
+      (adresse ? 'ADRESSE : ' + adresse + '\n' : '') +
+      (note ? 'NOTE : ' + note + '\n' : '') +
+      '\nPAIEMENT : À la livraison\n' +
+      'DATE : ' + new Date().toLocaleString('fr-FR')
+  };
 
-  // Envoyer vers WhatsApp
-  window.open(waUrl, '_blank');
-
-  setTimeout(() => {
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(formData)
+  })
+  .then(res => res.json())
+  .then(data => {
     btn.disabled = false;
     btn.innerHTML = '✅ Enregistrer ma commande';
     document.getElementById('form-area').style.display = 'none';
     document.getElementById('confirm-name').textContent = nom;
     document.getElementById('confirm-tel').textContent = tel;
     document.getElementById('confirm-area').style.display = 'block';
-  }, 1200);
+  })
+  .catch(() => {
+    // Même en cas d'erreur réseau, on affiche la confirmation
+    btn.disabled = false;
+    btn.innerHTML = '✅ Enregistrer ma commande';
+    document.getElementById('form-area').style.display = 'none';
+    document.getElementById('confirm-name').textContent = nom;
+    document.getElementById('confirm-tel').textContent = tel;
+    document.getElementById('confirm-area').style.display = 'block';
+  });
+}
+
+// Bouton WhatsApp optionnel après confirmation
+function sendWhatsApp() {
+  const encoded = encodeURIComponent(lastOrderMsg);
+  window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encoded, '_blank');
 }
 </script>
 </body>
