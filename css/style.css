@@ -347,6 +347,29 @@ body {
   margin-left: 6px;
 }
 
+.card-desc {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 6px;
+}
+
+.card-btn-commander {
+  width: 100%;
+  margin-top: 12px;
+  background: var(--gold);
+  color: var(--dark);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.card-btn-commander:hover { background: #B5842A; }
+
 /* ===== MODAL ===== */
 .modal-overlay {
   display: none;
