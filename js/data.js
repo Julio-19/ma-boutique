@@ -1,7 +1,7 @@
 // ============================================================
 //  DONNÉES DE LA BOUTIQUE — modifie ici ou via le Dashboard
 // ============================================================
-const WHATSAPP_NUMBER = "22900000000"; // ← Mets TON numéro WhatsApp (sans +)
+const WHATSAPP_NUMBER = "22953096726"; // ← Mets TON numéro WhatsApp (sans +)
 
 const DEFAULT_PRODUCTS = [
   {
