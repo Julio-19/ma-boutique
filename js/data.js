@@ -1,7 +1,7 @@
 // ============================================================
 //  DONNÉES DE LA BOUTIQUE — modifie ici ou via le Dashboard
 // ============================================================
-const WHATSAPP_NUMBER = "22953096726"; // ← Mets TON numéro WhatsApp (sans +)
+const WHATSAPP_NUMBER = "22993077243"; // ← Mets TON numéro WhatsApp (sans +)
 
 const DEFAULT_PRODUCTS = [
   {
@@ -21,11 +21,11 @@ const DEFAULT_PRODUCTS = [
   },
   {
     id: 2,
-    name: "Huile de Coco Vierge Bio",
-    price: 5000,
-    oldPrice: 7500,
+    name: "Huile de Batana 100% — Honduras Miracle Oil",
+    price: 8000,
+    oldPrice: 10000 ,
     stars: 5,
-    description: "Huile de coco vierge pressée à froid, 100 % bio. Idéale pour les cheveux, la peau et la cuisine. Pot de 500 ml.",
+    description: "💆‍♀️ Tes cheveux méritent le meilleur — et le meilleur vient du Honduras.L'huile de Batana est utilisée depuis des générations par les femmes d'Amérique centrale pour avoir des cheveux épais, brillants et en bonne santé. On l'appelle "l'huile miracle" et pour une bonne raison.",
     images: [
       "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80",
       "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&q=80"
