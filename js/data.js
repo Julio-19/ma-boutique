@@ -10,7 +10,7 @@ const DEFAULT_PRODUCTS = [
     price: 3000,
     oldPrice: 5000,
     stars: 4.5,
-    description: ".✨ Tu en as assez des boutons qui te volent ta confiance ? Ce gel a changé la vie de centaines de mes clients ici à Cotonou. En seulement 3 jours, la peau commence à se purifier. En 12h, la rougeur diminue. C'est cliniquement formulé avec de l'acide salicylique pas du hasard, de la vraie science.",
+    description: "✨ Tu en as assez des boutons qui te volent ta confiance ? Ce gel a changé la vie de centaines de mes clients ici à Cotonou. En seulement 3 jours, la peau commence à se purifier. En 12h, la rougeur diminue. C'est cliniquement formulé avec de l'acide salicylique pas du hasard, de la vraie science.",
     images: [
       "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&q=80",
       "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&q=80",
@@ -39,7 +39,7 @@ const DEFAULT_PRODUCTS = [
     price: 15000,
     oldPrice: 20000,
     stars: 4,
-    description: "📏 Tu veux des os solides et donner à ton corps les nutriments qu'il lui faut vraiment ? Ce complément premium contient Vitamine D3, Calcium et Zinc — les 3 nutriments essentiels que la plupart des Béninois ne reçoivent pas en quantité suffisante dans leur alimentation quotidienne pour grandir en taille rapidement",
+    description: "📏 Tu veux une grande taille et donner à ton corps les nutriments qu'il lui faut vraiment ? Ce complément premium contient Vitamine D3, Calcium et Zinc, les 3 nutriments essentiels que la plupart des Béninois ne reçoivent pas en quantité suffisante dans leur alimentation quotidienne pour grandir en taille rapidement",
     images: [
       "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&q=80",
       "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&q=80"
@@ -109,7 +109,7 @@ const DEFAULT_PRODUCTS = [
     price: 8000,
     oldPrice: null,
     stars: 4,
-    description: "🧴 Le gel que les hommes s'échangent en secret — maintenant disponible chez moi. Max Man est le produit de soin masculin le plus vendu dans sa catégorie. Gel et crème épaississante pour hommes, formulé pour ceux qui veulent reprendre le contrôle et apporter satisfaction à leur partenaire.",
+    description: "🧴 Le gel que les hommes s'échangent en secret, maintenant disponible chez moi. Max Man est le produit de soin masculin le plus vendu dans sa catégorie. Gel et crème épaississante pour hommes, formulé pour ceux qui veulent reprendre le contrôle et apporter satisfaction à leur partenaire.",
     images: [
       "https://images.unsplash.com/photo-1585501049087-d678e9b4d1a4?w=600&q=80",
       "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&q=80"
