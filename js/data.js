@@ -35,87 +35,87 @@ const DEFAULT_PRODUCTS = [
   },
   {
     id: 3,
-    name: "Sérum Anti-Taches Vitamine C",
-    price: 11000,
-    oldPrice: 15000,
+    name: "Height Growth Maximizer — Vitamine D, Calcium & Zinc",
+    price: 15000,
+    oldPrice: 20000,
     stars: 4,
-    description: "Sérum concentré en vitamine C pure à 20 %. Réduit les taches, unifie le teint et donne de l'éclat. Flacon de 30 ml avec pipette.",
+    description: "📏 Tu veux des os solides et donner à ton corps les nutriments qu'il lui faut vraiment ? Ce complément premium contient Vitamine D3, Calcium et Zinc — les 3 nutriments essentiels que la plupart des Béninois ne reçoivent pas en quantité suffisante dans leur alimentation quotidienne pour grandir en taille rapidement",
     images: [
       "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&q=80",
       "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&q=80"
     ],
     badge: "Nouveau",
-    category: "Beauté"
+    category: "Complément alimentaire"
   },
   {
     id: 4,
-    name: "Savon Noir Africain Argan",
-    price: 3500,
+    name: "Sac à Dos Essentials — Cuir Noir Premium",
+    price: 5000,
     oldPrice: null,
     stars: 4.5,
-    description: "Savon noir authentique enrichi à l'huile d'argan. Nettoie en profondeur, exfolie et laisse la peau douce. 250 g.",
+    description: "🖤 Le sac qui dit tout sur toi sans que tu aies besoin de parler. Ce sac à dos disponible en plusieurs couleurs n'est pas juste un accessoire. C'est une déclaration. Sobre, élégant, résistant fait pour les gens qui ont du style sans en faire trop.",
     images: [
       "https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?w=600&q=80",
       "https://images.unsplash.com/photo-1583947581924-860bda6a26df?w=600&q=80"
     ],
-    badge: null,
+    badge: "Mode & Accessoires",
     category: "Soins"
   },
   {
     id: 5,
-    name: "Masque Cheveux Karité Miel",
+    name: "Savon Debbitone — Radiant Skin Soap au Mie",
     price: 6500,
     oldPrice: 9000,
     stars: 4,
-    description: "Masque capillaire ultra-nourrissant au beurre de karité et miel d'acacia. Répare les pointes, démêle et fait briller. 300 ml.",
+    description: "🍯 Une peau lumineuse, douce et unifiée, c'est possible dès la première utilisation. Le Savon Debbitone au Miel est le secret beauté de milliers de femmes africaines. Antiseptique, nourrissant et formulé pour les peaux métissées et noires, il respecte ta peau tout en la transformant.",
     images: [
       "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=600&q=80",
       "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=600&q=80"
     ],
-    badge: "Promo",
-    category: "Cheveux"
+    badge: "Soin peau",
+    category: "Soins"
   },
   {
     id: 6,
-    name: "Gel Aloe Vera Pur 100%",
-    price: 4500,
-    oldPrice: 6000,
+    name: "Queen Love — BIG BOY",
+    price: 3000,
+    oldPrice: 5000,
     stars: 5,
-    description: "Gel d'aloe vera pur extrait à froid, sans additifs ni colorants. Apaise les irritations, hydrate la peau et accélère la cicatrisation. Flacon de 250 ml. Convient à tous types de peau.",
+    description: "Produits de Performance Masculine. Tu cherches à reprendre confiance et à offrir le meilleur à ta partenaire ? Ce produits de soin masculin premium sont utilisés par de nombreux hommes qui ont décidé de ne plus subir les complexes mais d'agir. Formules naturelles, sans danger, résultats visibles.",
     images: [
       "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=600&q=80",
       "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab12?w=600&q=80"
     ],
-    badge: "Nouveau",
+    badge: "Homme",
     category: "Soins"
   },
   {
     id: 7,
-    name: "Beurre de Karité Brut",
-    price: 3800,
+    name: "Huile Intime TONISABEREY — 10ml",
+    price: 3000,
     oldPrice: 5500,
     stars: 4.5,
-    description: "Beurre de karité brut non raffiné, récolté et travaillé artisanalement. Nourrit intensément la peau sèche, protège les lèvres et fortifie les cheveux. Pot de 200 g. Idéal pour toute la famille.",
+    description: "Tu cherches à gagner en confiance et à offrir davantage à ta partenaire ? L'huile TONISABEREY est une huile de massage intime premium, formulée spécialement pour les hommes qui veulent des résultats visibles, sans danger et sans effets secondaires.",
     images: [
       "https://images.unsplash.com/photo-1607006344380-b6775a0824a7?w=600&q=80",
       "https://images.unsplash.com/photo-1585232351009-aa69e0c919f0?w=600&q=80"
     ],
-    badge: "Artisanal",
+    badge: "Virilitee",
     category: "Soins"
   },
   {
     id: 8,
-    name: "Huile de Ricin Cheveux & Cils",
-    price: 4200,
+    name: "Max Man Gel & Crème Agrandissante — 50g",
+    price: 8000,
     oldPrice: null,
     stars: 4,
-    description: "Huile de ricin pressée à froid, épaisse et nourrissante. Stimule la pousse des cheveux et des cils, réduit la casse et renforce les racines. Flacon 100 ml avec pinceau applicateur inclus.",
+    description: "🧴 Le gel que les hommes s'échangent en secret — maintenant disponible chez moi. Max Man est le produit de soin masculin le plus vendu dans sa catégorie. Gel et crème épaississante pour hommes, formulé pour ceux qui veulent reprendre le contrôle et apporter satisfaction à leur partenaire.",
     images: [
       "https://images.unsplash.com/photo-1585501049087-d678e9b4d1a4?w=600&q=80",
       "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&q=80"
     ],
     badge: null,
-    category: "Cheveux"
+    category: "Soins"
   },
   {
     id: 9,
