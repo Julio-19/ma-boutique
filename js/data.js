@@ -6,11 +6,11 @@ const WHATSAPP_NUMBER = "22953096726"; // ← Mets TON numéro WhatsApp (sans +)
 const DEFAULT_PRODUCTS = [
   {
     id: 1,
-    name: "Crème Éclaircissante Naturelle",
-    price: 8500,
-    oldPrice: 12000,
+    name: "Gel Anti-Acné MOOYAM — Acide Salicylique 20g",
+    price: 3000,
+    oldPrice: 5000,
     stars: 4.5,
-    description: "Crème 100 % naturelle à base de karité et aloe vera. Hydrate, nourrit et unifie le teint en douceur. Sans parabène, sans mercure. Résultats visibles en 2 semaines.",
+    description: ".✨ Tu en as assez des boutons qui te volent ta confiance ? Ce gel a changé la vie de centaines de mes clients ici à Cotonou. En seulement 3 jours, la peau commence à se purifier. En 12h, la rougeur diminue. C'est cliniquement formulé avec de l'acide salicylique pas du hasard, de la vraie science.",
     images: [
       "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&q=80",
       "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&q=80",
