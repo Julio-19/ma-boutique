@@ -96,8 +96,16 @@ const DEFAULT_PRODUCTS = [
     stars: 4,
     description: "🍯 Une peau lumineuse, douce et unifiée, c'est possible dès la première utilisation. Le Savon Debbitone au Miel est le secret beauté de milliers de femmes africaines. Antiseptique, nourrissant et formulé pour les peaux métissées et noires, il respecte ta peau tout en la transformant.",
     images: [
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=600&q=80",
-      "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=600&q=80"
+      "images/savon1.jpg",
+      "images/savon2.jpg",
+      "images/savon3.jpg",
+      "images/savon4.jpg",
+      "images/savon5.jpg",
+      "images/savon6.jpg",
+      "images/savon7.jpg",
+      "images/savon8.jpg",
+      "images/savon9.jpg",
+      "images/savon10.jpg"
     ],
     badge: "Soin peau",
     category: "Soins"
