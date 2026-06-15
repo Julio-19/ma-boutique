@@ -14,7 +14,7 @@ const DEFAULT_PRODUCTS = [
     images: [
       "images/acne1.jpg",
       "images/acne2.jpg",
-      "images/acne3.jng",
+      "images/acne3.jpg",
       "images/acne4.jpg",
       "images/acne5.jpg",
       "images/acne6.jpg",
