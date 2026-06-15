@@ -118,8 +118,16 @@ const DEFAULT_PRODUCTS = [
     stars: 5,
     description: "Produits de Performance Masculine. Tu cherches à reprendre confiance et à offrir le meilleur à ta partenaire ? Ce produits de soin masculin premium sont utilisés par de nombreux hommes qui ont décidé de ne plus subir les complexes mais d'agir. Formules naturelles, sans danger, résultats visibles.",
     images: [
-      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=600&q=80",
-      "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab12?w=600&q=80"
+      "images/love1.jpg",
+      "images/love2.jpg",
+      "images/love3.jpg",
+      "images/love4.jpg",
+      "images/love5.jpg",
+      "images/love6.jpg",
+      "images/love7.jpg",
+      "images/love8.jpg",
+      "images/love9.jpg",
+      "images/love10.jpg"
     ],
     badge: "Homme",
     category: "Soins"
@@ -132,8 +140,16 @@ const DEFAULT_PRODUCTS = [
     stars: 4.5,
     description: "Tu cherches à gagner en confiance et à offrir davantage à ta partenaire ? L'huile TONISABEREY est une huile de massage intime premium, formulée spécialement pour les hommes qui veulent des résultats visibles, sans danger et sans effets secondaires.",
     images: [
-      "https://images.unsplash.com/photo-1607006344380-b6775a0824a7?w=600&q=80",
-      "https://images.unsplash.com/photo-1585232351009-aa69e0c919f0?w=600&q=80"
+      "images/intime1.jpg",
+      "images/intime2.jpg",
+      "images/intime3.jpg",
+      "images/intime4.jpg",
+      "images/intime5.jpg",
+      "images/intime6.jpg",
+      "images/intime7.jpg",
+      "images/intime8.jpg",
+      "images/intime9.jpg",
+      "images/intime10.jpg"
     ],
     badge: "Virilitee",
     category: "Soins"
@@ -146,8 +162,16 @@ const DEFAULT_PRODUCTS = [
     stars: 4,
     description: "🧴 Le gel que les hommes s'échangent en secret, maintenant disponible chez moi. Max Man est le produit de soin masculin le plus vendu dans sa catégorie. Gel et crème épaississante pour hommes, formulé pour ceux qui veulent reprendre le contrôle et apporter satisfaction à leur partenaire.",
     images: [
-      "https://images.unsplash.com/photo-1585501049087-d678e9b4d1a4?w=600&q=80",
-      "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&q=80"
+      "images/max1.jpg",
+      "images/max2.jpg",
+      "images/max3.jpg",
+      "images/max4.jpg",
+      "images/max5.jpg",
+      "images/max6.jpg",
+      "images/max7.jpg",
+      "images/max8.jpg",
+      "images/max9.jpg",
+      "images/max10.jpg"
     ],
     badge: null,
     category: "Soins"
