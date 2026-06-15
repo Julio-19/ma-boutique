@@ -74,8 +74,16 @@ const DEFAULT_PRODUCTS = [
     stars: 4.5,
     description: "🖤 Le sac qui dit tout sur toi sans que tu aies besoin de parler. Ce sac à dos disponible en plusieurs couleurs n'est pas juste un accessoire. C'est une déclaration. Sobre, élégant, résistant fait pour les gens qui ont du style sans en faire trop.",
     images: [
-      "https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?w=600&q=80",
-      "https://images.unsplash.com/photo-1583947581924-860bda6a26df?w=600&q=80"
+      "images/sac1.jpg",
+      "images/sac2.jpg",
+      "images/sac3.jpg",
+      "images/sac4.jpg",
+      "images/sac5.jpg",
+      "images/sac6.jpg",
+      "images/sac7.jpg",
+      "images/sac8.jpg",
+      "images/sac9.jpg",
+      "images/sac10.jpg"
     ],
     badge: "Mode & Accessoires",
     category: "Soins"
