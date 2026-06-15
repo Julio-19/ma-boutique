@@ -12,9 +12,16 @@ const DEFAULT_PRODUCTS = [
     stars: 4.5,
     description: "✨ Tu en as assez des boutons qui te volent ta confiance ? Ce gel a changé la vie de centaines de mes clients ici à Cotonou. En seulement 3 jours, la peau commence à se purifier. En 12h, la rougeur diminue. C'est cliniquement formulé avec de l'acide salicylique pas du hasard, de la vraie science.",
     images: [
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&q=80",
-      "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&q=80",
-      "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=600&q=80"
+      "images/acne1.jpg",
+      "images/acne2.jpg",
+      "images/acne3.jpg",
+      "images/acne4.jpg",
+      "images/acne5.jpg",
+      "images/acne6.jpg",
+      "images/acne7.jpg",
+      "images/acne8.jpg",
+      "images/acne9.jpg",
+      "images/acne10.jpg"
     ],
     badge: "Bestseller",
     category: "Beauté"
