@@ -56,8 +56,12 @@ const DEFAULT_PRODUCTS = [
     stars: 4,
     description: "📏 Tu veux une grande taille et donner à ton corps les nutriments qu'il lui faut vraiment ? Ce complément premium contient Vitamine D3, Calcium et Zinc, les 3 nutriments essentiels que la plupart des Béninois ne reçoivent pas en quantité suffisante dans leur alimentation quotidienne pour grandir en taille rapidement",
     images: [
-      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&q=80",
-      "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&q=80"
+     "images/taille1.jpg",
+     "images/taille2.jpg",
+      "images/taille3.jpg",
+      "images/taille4.jpg",
+      "images/taille5.jpg",
+     "images/taille6.jpg"
     ],
     badge: "Nouveau",
     category: "Complément alimentaire"
