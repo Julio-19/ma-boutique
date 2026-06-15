@@ -34,8 +34,16 @@ const DEFAULT_PRODUCTS = [
     stars: 5,
     description: "💆‍♀️ Tes cheveux méritent le meilleur — et le meilleur vient du Honduras.L'huile de Batana est utilisée depuis des générations par les femmes d'Amérique centrale pour avoir des cheveux épais, brillants et en bonne santé. On l'appelle 'l'huile miracle' et pour une bonne raison.",
     images: [
-      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80",
-      "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&q=80"
+      "images/batana1.jpg",
+      "images/batana2.jpg",
+      "images/batana3.jpg",
+      "images/batana4.jpg",
+      "images/batana5.jpg",
+      "images/batana6.jpg",
+      "images/batana7.jpg",
+      "images/batana8.jpg",
+      "images/batana9.jpg",
+      "images/batana10.jpg"
     ],
     badge: "Bio",
     category: "Soins"
