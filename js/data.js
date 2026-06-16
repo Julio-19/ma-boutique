@@ -91,7 +91,7 @@ const DEFAULT_PRODUCTS = [
   {
     id: 5,
     name: "Savon Debbitone — Radiant Skin Soap au Mie",
-    price: 6500,
+    price: 5000,
     oldPrice: 9000,
     stars: 4,
     description: "🍯 Une peau lumineuse, douce et unifiée, c'est possible dès la première utilisation. Le Savon Debbitone au Miel est le secret beauté de milliers de femmes africaines. Antiseptique, nourrissant et formulé pour les peaux métissées et noires, il respecte ta peau tout en la transformant.",
